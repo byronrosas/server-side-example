@@ -9,7 +9,7 @@ import App from '../src/App';
 
 const app = express();
 
-const PORT = 8000;
+const PORT = 3000;
 
 app.use('^/$',(req,res,next)=>{
     fs.readFile(path.resolve('./build/index.html'),'utf-8',(err,data)=>{
